@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/bgprofil"
+    tools:context=".Activities.Fragments.ProfileFragment"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/login_photo"
+        android:layout_width="162dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="126dp"
+        android:src="@drawable/userphoto"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Photo Profile"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/newname"
+        android:layout_width="273dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:hint="New Name"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:text="Email"
+        />
+
+    <EditText
+        android:id="@+id/newemail"
+        android:layout_width="272dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:hint="New Email"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Save"
+        app:backgroundTint="#121111" />
+</LinearLayout>

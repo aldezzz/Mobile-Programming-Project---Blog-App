@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/forumis"
+        android:label="Forum PUMA IS"
+        android:roundIcon="@drawable/forumis"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BlogApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.PostDetailActivity"
+            android:label="Post Detail Activity">
+
+            <!-- Add any necessary intent filters or other configurations here -->
+        </activity>
+        <activity
+            android:name=".Activities.Home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.BlogApp.NoActionBar" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="true"
+            android:label="FORUM PUMA IS"
+            android:theme="@style/Theme.BlogApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

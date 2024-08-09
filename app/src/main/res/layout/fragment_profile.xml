@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@drawable/bgprofil"
+    tools:context=".Activities.Fragments.ProfileFragment"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/login_photo"
+        android:layout_width="82dp"
+        android:layout_height="93dp"
+        android:layout_gravity="left"
+
+        android:layout_marginTop="5dp"
+        android:src="@drawable/userphoto" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Username" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-155dp"
+        android:layout_marginTop="160dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btneditprofil"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            app:backgroundTint="#121111" />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            app:backgroundTint="#121111" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_person" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_person" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="357dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="-370dp"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnpost"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="5dp"
+            android:background="#070707"
+            android:src="@android:drawable/ic_dialog_dialer" />
+
+        <ImageView
+            android:id="@+id/btncomment"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="5dp"
+            android:background="#0C0C0C"
+            android:src="@android:drawable/sym_action_chat" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="-370dp"
+        android:layout_marginTop="315dp">
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/row_post_item"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="-370dp"
+        android:layout_marginTop="315dp">
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/row_comment"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
